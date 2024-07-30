@@ -5,10 +5,14 @@ Login and Role Selection: Users can log into the app using their email and passw
 
 ## 100ms differenr role for Live Streaming
  broadcaster: This role represents a streamer on stage, capable of publishing their audio/video. There can be multiple participants who join as a broadcaster.
+ 
  co-broadcaster: This role represents a streamer on stage, who can also publish their audio/video but cannot start or stop the stream, providing a level of control over the broadcast 
  flow.
+ 
 viewer-realtime: This role represents an off stage participant (WebRTC), who subscribes to on stage participants and can interact using messaging, but cannot publish audio/video.
+
 viewer-near-realtime: This role represents an off stage participant (HLS) with a delayed stream, who subscribes to the composite live stream and can interact using messaging.
+
 viewer-on-stage (only if enabled): This role represents a temporary on stage participant (WebRTC), who subscribes to the broadcaster and co-broadcaster, and can share audio/video.
 
 
